@@ -32,7 +32,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Actions and Observations</h2>
 
 <p>
-<img src="file:///C:/Users/503332152/Downloads/IMG_0032.pdf" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="[file:///C:/Users/503332152/Downloads/IMG_0032.pdf](https://docs.google.com/document/d/1yDry7F0Kb_GEfyqvSx1sdIOBdmiNaX3SU7XD0ym9gyI/edit)" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 In the Microsoft Azure portal, I have created a Resource Group, a Windows 10 Virtual Machine and a Linux Ubuntu Virtual Machine. Using Remote Desktop I have opened the Windows 10 VM. Then I downloaded, installed, and opened Wireshark. The live traffic on the Virtual Machines can be observed in the inital opening of Wireshark, as show above. 
