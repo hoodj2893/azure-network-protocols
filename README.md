@@ -43,6 +43,10 @@ In the Microsoft Azure portal, I have created a Resource Group, a Windows 10 Vir
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 <p>
 Now that I have opened Wireshark I will clear the packets being shown and filter for ICMP traffic only by typing it into the "Apply a display" bar at top.
 Next I have retrieved the private IP address of the Ubuntu VM and attempted to ping it from within the Windows 10 VM. The ping requests and replies can be observed within WireShark as shown above. 
