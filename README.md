@@ -41,11 +41,11 @@ In the Microsoft Azure portal, I have created a Resource Group, a Windows 10 Vir
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/6sryS9D.png height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ai5O1eT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Now that I have opened Wireshark I will clear the packets being shown and filter for ICMP traffic only by typing it into the "Apply a display" bar at top.
@@ -58,15 +58,20 @@ Next I have retrieved the private IP address of the Ubuntu VM and attempted to p
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/QbFygqT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+                                                                                                 
+ <p>
+<img src="https://i.imgur.com/mI88KpV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>                                                                                                
+                                                                                                 
 <p>
 Here I have filtered SSH to observe SSH traffic only. In my Windows 10 VM Powershell, I have entered the SSH command via the Ubuntu VM's private IP address. Followed by entering the Ubuntu VM's username, and password commands into the shell prompts. Now I have connected VM1 to VM2 as you can see the command line has VM2 as the user. So essentially I am now in the Ubuntu Linux VM as shown by the difference in command line name and structure. I can now use different commands to find out information about the computer, network, etc. SSH is also tcp.port = = 22 in Wireshark.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ZYwzsY9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Next I have filtered for DHCP traffic. DHCP is used to automatically assign you an IP address, so on this step I will force the renewal of an IP address with DHCP IP configuration and observe the change. We can also see the ip address re-issued to us in powershell.
@@ -74,7 +79,7 @@ Next I have filtered for DHCP traffic. DHCP is used to automatically assign you 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/OZHlDzz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Now I'm going to filter for DNS traffic which means Im going to ask the DNS server what the IP address is for any given server. So from my Windows 10 VM within a command line, I have used nslookup to see what google.com's IP address is. As shown in the picture, Google's IP address has popped up in the command line. DNS in wireshark is also: UDP.port = = 53.
@@ -82,7 +87,7 @@ Now I'm going to filter for DNS traffic which means Im going to ask the DNS serv
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/gpkVRtx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Lastly, I have filtered for RDP traffic. We use RDP to interact with the computer.
